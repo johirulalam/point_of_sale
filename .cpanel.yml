@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/porimanc/public_html/
+    - /bin/cp * $DEPLOYPATH

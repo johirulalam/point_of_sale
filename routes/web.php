@@ -40,7 +40,7 @@ Route::middleware(['auth'])->group(function(){
 // Customer ROUTE ARE HERE  
 	Route::get('/add-customer', [CustomerController::class, 'addCustomer'])->name('add.customer');
 	Route::post('/add-customer', [CustomerController::class, 'storeCustomer']);
-	Route::get('/all-customer', [SupplierController::class, 'showAllCustomer'])->name('all.customer');
+	Route::get('/all-customer', [CustomerController::class, 'showAllCustomer'])->name('all.customer');
 	Route::get('/delete-customer/{id}', [SupplierController::class, 'deleteCustomer'])->name('delete.customer');
 	Route::get('/edit-customer/{id}', [SupplierController::class, 'editCustomer'])->name('edit.customer');
 	Route::post('/edit-customer/{id}', [SupplierController::class, 'updateCustomer']);

@@ -70,11 +70,11 @@ class CustomerController extends Controller
 
 
 
-    public function showAllSupplier()
+    public function showAllCustomer()
     {
     	$data = [];
-    	$data['suppliers'] = Supplier::all();
-    	return view('layouts.all_supplier', $data);
+    	$data['customers'] = Customer::all();
+    	return view('layouts.all_customer', $data);
     }
 
 
